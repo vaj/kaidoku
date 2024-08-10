@@ -1,7 +1,7 @@
 #include <linux/module.h>
 #include <linux/kernel.h>
 
-static int loop = 0x7FFFFFFF;
+static int loop = INT_MAX;
 module_param(loop, int, 0644);
 MODULE_PARM_DESC(loop, "specify the loop count");
 
